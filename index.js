@@ -56,6 +56,12 @@ const adminMiddleware =(req,res,next)=>{
   };
 
 
+  app.get('/',(req,res) => {
+    res.send("Bienvenido")
+
+  }) 
+
+
 app.post('/login',(req,res) =>{
   console.log(req.body);
   if(req.body) {
